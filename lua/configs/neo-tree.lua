@@ -5,8 +5,8 @@ require("neo-tree").setup(astronvim.user_plugin_opts("plugins.neo-tree", {
     winbar = true,
     content_layout = "center",
     tab_labels = {
-      filesystem = astronvim.get_icon "FolderClosed" .. " File",
-      buffers = astronvim.get_icon "DefaultFile" .. " Bufs",
+    filesystem = astronvim.get_icon "FolderClosed" .. " File",
+    buffers = astronvim.get_icon "DefaultFile" .. " Bufs",
       git_status = astronvim.get_icon "Git" .. " Git",
       diagnostics = astronvim.get_icon "Diagnostic" .. " Diagnostic",
     },
@@ -43,6 +43,9 @@ require("neo-tree").setup(astronvim.user_plugin_opts("plugins.neo-tree", {
     },
   },
   filesystem = {
+    filtered_items = {
+      visible = true
+    },
     follow_current_file = true,
     hijack_netrw_behavior = "open_current",
     use_libuv_file_watcher = true,

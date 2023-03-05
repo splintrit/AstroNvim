@@ -319,6 +319,16 @@ local astro_plugins = {
     setup = function() astronvim.lazy_load_commands("neovim-session-manager", "SessionManager") end,
     config = function() require "configs.session_manager" end,
   },
+
+  --Auto Save
+  ["Pocco81/auto-save.nvim"] ={
+    config = function()
+         require("auto-save").setup {
+            -- your config goes here
+            -- or just leave it empty :)
+         }
+    end,
+  }
 }
 
 if astronvim.updater.snapshot then
