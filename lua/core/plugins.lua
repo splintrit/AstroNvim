@@ -328,7 +328,10 @@ local astro_plugins = {
             -- or just leave it empty :)
          }
     end,
-  }
+  },
+
+  -- Go
+  ["fatih/vim-go"] = {}
 }
 
 if astronvim.updater.snapshot then
