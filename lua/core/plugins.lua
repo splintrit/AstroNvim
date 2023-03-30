@@ -330,6 +330,34 @@ local astro_plugins = {
     end,
   },
 
+  --Nightfox Theme
+  ["EdenEast/nightfox.nvim"] = {
+    config = function()
+      require("EdenEast/nightfox.nvim")
+    end
+  },
+
+  --Github Theme
+  ["projekt0n/github-nvim-theme"] = {
+      config = function()
+          require("projekt0n/github-nvim-theme")
+      end
+  },
+
+  --Intellij Light Theme - colorscheme="intellij"
+  ["chiendo97/intellij.vim"] = {
+    config = function()
+      require("chiendo97/intellij.vim")
+    end
+  },
+
+  --Intellij Darcula Theme - colorscheme="darcula"
+  ["doums/darcula"] = {
+    config = function()
+      require("doums/darcula")
+    end
+  },
+
   -- Go
   ["fatih/vim-go"] = {}
 }
